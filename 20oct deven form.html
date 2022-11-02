@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+</head>
+<body>
+	<form>
+		<input method="post" id="n1" placeholder="enter first number"><br><br>
+		<input method="post" id="n1" placeholder="enter second number"><br><br>
+		<input method="post" id="n1" placeholder="enter third number"><br><br>
+		<input type="button" value="submit" onclick="bigNum()">
+	</form>
+	
+	<script type="text/javascript">
+		function bigNum() {
+			var n1 = document.getElementById('n1').value;
+			var n2 = document.getElementById('n2').value;
+			var n3 = document.getElementById('n3').value;
+
+			alert(n1);
+			alert(n2);
+			alert(n3);
+
+			if (n1<n2) 
+			{
+				if (n1<n3)
+				{
+					alert(n2);
+				}
+			else
+				{
+					alert(n3);
+				}	
+			}
+			else
+			{
+				if (n2>n3) 
+				{
+					alert(n2);
+				}
+			else
+			{
+				alert(n3);
+			}
+			}
+			// body...
+		}
+	</script>	
+
+</body>
+</html>

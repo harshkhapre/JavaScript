@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greater Among 3</title>
+</head>
+<body>
+<script type="text/javascript">
+	var Num1 = parseInt(prompt("Enter First Number."));
+	var Num2 = parseInt(prompt("Enter Second Number."));
+	var Num3 = parseInt(prompt("Enter Third Number."));
+	
+	if (Num1>=Num2) 
+	{
+		if(Num1>=Num3)
+		{
+			document.write("<h1>Number<span style='color:blue;font-size: 150px;'> "+Num1+"</span> Is Greater Than Number "+(Num2)+" And "+Num3+"</h1>");
+		}
+		else if (Num3>=Num2)
+		{
+			document.write("<h1>Number<span style='color:blue;font-size: 150px;'> "+Num3+"</span> Is Greater Than Number "+(Num1)+" And "+(Num2)+"</h1>");
+		}
+	}
+	else if(Num2>=Num3)
+		{
+			document.write("<h1>Number<span style='color:blue;font-size: 150px;'> "+Num2+"</span> Is Greater Than Number "+(Num1)+" And "+Num3+"</h1>");
+		}
+		else if (Num3>=Num1)
+		{
+			document.write("<h1>Number<span style='color:blue;font-size: 150px;'> "+Num3+"</span> Is Greater Than Number "+(Num1)+" And "+(Num2)+"</h1>");
+		}
+</script>
+</body>
+</html>
